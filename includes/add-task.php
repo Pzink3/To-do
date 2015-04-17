@@ -1,6 +1,6 @@
 <?php
 $task = strip_tags($_POST['task']);
-$date = date['y-m-d'];
+$date = date['Y-m-d'];
 $time = time['h:m:s'];
 
 include ['connect.php'];
