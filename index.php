@@ -20,6 +20,7 @@ and open the template in the editor.
         <?php require("includes/connect.php");
         $mysqli = new mysqli('localhost', 'root', 'root', 'to-do');
         $query = "SELECT * FROM tasks ORDER BY date ASC, time ASC";
+        echo 'Welcome!';
         if($result = $mysqli->query($query)){
             $numrows = $result->num_rows;
             if($numrows>0){
