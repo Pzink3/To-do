@@ -64,10 +64,10 @@ renderTime();
             <div class='task-list'>
                 <ul>
             
-        <?php require("includes/connect.php");
-        $mysqli = new mysqli('localhost', 'root', 'root', 'to-do');
+        <?php require("includes/connect.php"); // requires the connect php file
+        $mysqli = new mysqli('localhost', 'root', 'root', 'to-do'); // locates the tasks
         $query = "SELECT * FROM tasks ORDER BY date ASC, time ASC";
-        echo 'Welcome!';
+        echo 'Welcome!'; // makes the welcome message
         if($result = $mysqli->query($query)){
             $numrows = $result->num_rows;
             if($numrows>0){
